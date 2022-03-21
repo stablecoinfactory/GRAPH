@@ -1,0 +1,12 @@
+type Deposit @entity {
+	id: ID!
+		token: Bytes!
+	address: Bytes!
+		amount: BigInt!
+}
+
+type Claim @entity {
+	id: ID!
+	address: Bytes!
+	amount: BigInt!
+}
